@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylees/normalize.css">
+    <link rel="stylesheet" href="stylees/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>Palindrome Checker</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1 class="container__title">Palindrome Checker</h1>
+        </header>
+        
+        <div class="container__legend">
+            <div class="legend-espec">
+
+                <div class="legend-sub">
+                    <h2>What's about</h2>
+                    <p>A palindrome is a word or sentence that's spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+                    
+                </div>
+
+                <div class="legend-sub">
+                    <h2>Rules</h2>
+                    <p>We'll pass strings with varying formats, such as <span class="special-word">racecar</span>, <span class="special-word">RaceCar</span>, and <span class="special-word">race CAR</span> among others.</p>
+
+                    <p>We'll also pass strings with special symbols, such as <span class="special-word">2A3*3a2</span> , <span class="special-word"> 2A3 3a2</span>, and <span class="special-word">2_A3*3#A2</span>.</p>
+                </div>  
+
+            </div>
+
+            <div class="legend-form">
+                <form>
+
+                    <label for="pword" class="label-text">Put down your word here:</label><br>
+                    
+                    <input type="text" class="form-text" id="p-word" name="pword"><br>
+                    <p id="true-validation" class="textValidation">Your text is a palindrome</p>
+                    <p id="false-validation" class="textValidation">Oh sorry, this text isn't a palindrome</p>
+                    <input type="submit" class="btn" id="p-btn" value="Go!">
+                    <input type="submit" class="btn" id="r-btn" value="Restart">
+
+                </form>
+            </div>
+        </div>
+
+        <footer class="container__footer">
+            <p>Game created by &copy;Leandro Morillo</p>
+        </footer>
+
+    </main>
+
+    
+    
+<script src="script.js"></script>
+</body>
+</html>

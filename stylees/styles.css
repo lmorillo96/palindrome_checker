@@ -1,0 +1,79 @@
+:root {
+    --bg-word-color: #A8A196;
+    --bg-color: #8CC0DE;
+    --pal-size: 20px;
+    --pal-font: 'Ubuntu', sans-serif;
+    --robot-font: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: var(--bg-color); 
+    font-family: var(--pal-font);
+}
+
+p {
+    font-size: var(--pal-size);
+}
+
+.special-word {
+    padding: 2px;
+    background-color: var(--bg-word-color);
+    font-family: var(--robot-font);
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container__legend {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 2em;
+}
+
+.label-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.form-text {
+    width: 30%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 100px;
+    margin-top: 5px;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background-color: #CEE6F3;
+}
+
+.textValidation {
+    display: none;
+}
+
+#true-validation {
+    color: green;
+}
+
+#false-validation {
+    color: red;
+}
+
+.container__footer p {
+    font-size: 15px;
+}
+
